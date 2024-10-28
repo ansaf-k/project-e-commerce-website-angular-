@@ -1,0 +1,97 @@
+
+.seller-auth {
+    background-color: #F7F1E3;
+    color: #3C3C3C;
+    font-family: 'Poppins', serif;
+}
+
+.container {
+    min-height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.card {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem 3rem;
+}
+
+.logo {
+    font-family: "Gabarito", sans-serif;
+    color: #2C3E50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    color: #D4AF37;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 10px;
+}
+
+.form-label {
+    color: #3C3C3C;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.form-control {
+    border-color: #D4AF37;
+    color: #3c3c3c;
+    padding: 0.50rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #F4C7AB;
+    box-shadow: 0 0 0 0.2rem rgba(244, 199, 171, 0.25);
+}
+
+.btn-primary {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    color: #F7F1E3;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: #2C3E50;
+}
+
+.login-link {
+    color: #2C3E50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-lin {
+    color: #2C3E50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #D4AF37;
+}
+
+.login-lin:hover .login-link{
+    color: #D4AF37;
+}
+
+.copyright {
+    color: #3C3C3C;
+    font-size: 0.9rem;
+}

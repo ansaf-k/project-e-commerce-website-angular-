@@ -1,0 +1,51 @@
+.custom-navbar {
+    background-color: #2C3E50;
+    
+  }
+  .custom-brand {
+    color: #D4AF37 !important;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: "Gabarito", sans-serif;
+  }
+  .custom-search-input {
+    background-color: #F7F1E3;
+    border-color: #D4AF37;
+  }
+  .custom-search-input:focus {
+    border-color: #F4C7AB;
+    box-shadow: 0 0 0 0.25rem rgba(244, 199, 171, 0.25);
+  }
+  .custom-search-icon {
+    background-color: #F7F1E3;
+    border-color: #D4AF37;
+    color: #3C3C3C;
+  }
+  .custom-btn {
+    color: #F7F1E3;
+    border-color: #F7F1E3;
+  }
+  .custom-btn:hover {
+    background-color: #BDC3C7;
+    color: #2C3E50;
+  }
+  .custom-badge {
+    background-color: #F4C7AB;
+    color: #2C3E50;
+  }
+  .nav-link {
+    color: #F7F1E3 !important;
+  }
+  .nav-link:hover {
+    color: #BDC3C7 !important;
+  }
+  .dropdown-menu {
+    background-color: #F7F1E3;
+    border-color: #D4AF37;
+  }
+  .dropdown-item {
+    color: #3C3C3C;
+  }
+  .dropdown-item:hover {
+    background-color: #BDC3C7;
+  }

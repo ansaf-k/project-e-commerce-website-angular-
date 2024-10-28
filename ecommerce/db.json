@@ -1,0 +1,76 @@
+{
+  "seller": [
+    {
+      "id": "9e5a",
+      "name": "ansaf",
+      "email": "ansaf@test.com",
+      "password": "123123"
+    },
+    {
+      "id": "3ce8",
+      "name": "muhammed ansaf k",
+      "email": "ansaf@test.com",
+      "password": "123"
+    },
+    {
+      "id": "5e37",
+      "name": "muhammed ansaf k",
+      "email": "ansaf@test.com",
+      "password": "123"
+    },
+    {
+      "id": "480a",
+      "name": "muhammed ansaf k",
+      "email": "ansaf@test.com",
+      "password": "123"
+    },
+    {
+      "id": "fbff",
+      "name": "muhammed ansaf k",
+      "email": "ansaf@test.com",
+      "password": "123"
+    },
+    {
+      "id": "e9a6",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "123"
+    },
+    {
+      "id": "9f0e",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "123"
+    },
+    {
+      "id": "a432",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "123"
+    },
+    {
+      "id": "3a4b",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": ""
+    },
+    {
+      "id": "d1d7",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "123"
+    },
+    {
+      "id": "280f",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "bebc",
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "123"
+    }
+  ]
+}
