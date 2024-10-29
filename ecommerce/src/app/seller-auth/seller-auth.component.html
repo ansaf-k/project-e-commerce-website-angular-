@@ -1,4 +1,4 @@
-<div class="seller-auth">
+<div *ngIf="!showLogin" class="seller-auth">
     <div class="container">
         <div class="row justify-content-center w-100">
             <div class="col-md-8 col-lg-6">
@@ -24,7 +24,7 @@
                             </div>
                         </form>
                         <p class="text-center mt-2">
-                            <a href="#" class="login-lin">Already have an account? <span class="login-link">Log in</span></a>
+                            <a (click)="openLogin()" class="login-lin">Already have an account? <span class="login-link">Log in</span></a>
                         </p>
                     </div>
                 </div>
@@ -33,3 +33,39 @@
         </div>
     </div>
 </div>
+
+
+<!-- login -->
+<div *ngIf="showLogin" class="sign-up">
+    <div class="container">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="logo text-center ">LuxMart</h1>
+                        <p class="subtitle text-center">Seller Login</p>
+                        <p class="small text-center text-danger">{{authError}}</p>
+                        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" ngModel name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" ngModel name="password" placeholder="Create a password" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                            </div>
+                        </form>
+                        <p class="text-center mt-2">
+                            <a (click)="openSignup()" class="login-lin">Don't have an account? <span class="login-link">Sign-Up</span></a>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center mt-3 copyright">&copy; 2023 LuxMart. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,97 +1,105 @@
-
-.seller-auth {
-    background-color: #F7F1E3;
-    color: #3C3C3C;
-    font-family: 'Poppins', serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.container {
-    min-height: 91vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #121212;
+  background-image: linear-gradient(135deg, rgba(18, 18, 18, 0.97) 0%, rgba(18, 18, 18, 0.95) 100%), url('https://source.unsplash.com/random/1920x1080/?luxury,dark');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0;
 }
-
 .card {
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #1E1E1E;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
-
 .card-body {
-    padding: 2rem 3rem;
+  padding: 2.5rem;
 }
-
 .logo {
-    font-family: "Gabarito", sans-serif;
-    color: #2C3E50;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #D4AF37;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
 .subtitle {
-    color: #D4AF37;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    line-height: 10px;
+  color: #F4E0A7;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
 }
-
 .form-label {
-    color: #3C3C3C;
-    font-weight: 500;
-    margin-bottom: 4px;
+  color: #B0B0B0;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
-
 .form-control {
-    border-color: #D4AF37;
-    color: #3c3c3c;
-    padding: 0.50rem 1rem;
+  background-color: #2C2C2C;
+  border: 1px solid #3A3A3A;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
-
 .form-control:focus {
-    border-color: #F4C7AB;
-    box-shadow: 0 0 0 0.2rem rgba(244, 199, 171, 0.25);
+  background-color: #393939;
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
 }
-
+.form-control::placeholder {
+  color: #7d7d7d;
+}
 .btn-primary {
-    background-color: #2C3E50;
-    border-color: #2C3E50;
-    color: #F7F1E3;
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  background-color: #D4AF37;
+  border-color: #D4AF37;
+  color: #121212;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
-
 .btn-primary:hover, .btn-primary:focus {
-    background-color: #D4AF37;
-    border-color: #D4AF37;
-    color: #2C3E50;
+  background-color: #b29126;
+  border-color: #b29126;
+  color: #121212;
 }
-
+.auth-switch {
+  color: #B0B0B0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.auth-switch:hover {
+  color: #F4E0A7;
+}
 .login-link {
-    color: #2C3E50;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #D4AF37;
+  font-weight: 600;
 }
-
-.login-lin {
-    color: #2C3E50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.login-link:hover {
-    color: #D4AF37;
-}
-
-.login-lin:hover .login-link{
-    color: #D4AF37;
-}
-
 .copyright {
-    color: #3C3C3C;
-    font-size: 0.9rem;
+  color: #B0B0B0;
+  font-size: 0.9rem;
+}
+.text-danger {
+  color: #FF6B6B !important;
+}
+@media (max-width: 767px) {
+  .card-body {
+    padding: 2rem 1.5rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
 }

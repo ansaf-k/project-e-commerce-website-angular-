@@ -1,11 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark py-2 custom-navbar">
-    <div class="container">
-      <a class="navbar-brand custom-brand" href="/">LuxMarket</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<nav class="navbar navbar-expand-lg py-3">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <span class="brand-text">LuxMarket</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarContent">
+      <form class="d-flex flex-grow-1 mx-lg-4 search-form">
+        <div *ngIf="menuType==='default'" class="input-group">
+          <span class="input-group-text search-icon">
+            <i class="bi bi-search"></i>
+          </span>
+          <input class="form-control search-input" type="search" placeholder="Search luxury items..." aria-label="Search">
+        </div>
+      </form>
+      <div class="d-flex align-items-center">
+        <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" routerLink="/">Home</a>
           </li>
@@ -13,31 +24,38 @@
             <a class="nav-link" routerLink="/seller-auth">Seller</a>
           </li>
         </ul>
-        <form class="d-flex flex-grow-1 mx-lg-4">
-          <div class="input-group">
-            <span class="input-group-text custom-search-icon">
-                <i class="bi bi-search"></i>
-            </span>
-            <input class="form-control custom-search-input" type="search" placeholder="Search luxury items..." aria-label="Search">
-          </div>
-        </form>
-        <div class="d-flex align-items-center">
-          <div class="dropdown">
-            <button class="btn custom-btn dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              Login / Sign In
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="loginDropdown">
-              <li><a class="dropdown-item" href="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
-            </ul>
-          </div>
-          <button class="btn custom-btn ms-2 position-relative">
-            <i class="bi bi-cart3"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
-              3
-            </span>
+        <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link">Product List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Product Add</a>
+          </li>
+        </ul>
+        <div *ngIf="menuType==='default'" class="dropdown">
+          <button class="btn ms-2 custom-btn dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Login / Sign Up
           </button>
+          <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+            <li><a class="dropdown-item" href="/login">Login</a></li>
+            <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
+          </ul>
         </div>
+        <button *ngIf="menuType==='default'" class="btn custom-btn ms-2 position-relative cart-btn">
+          <i class="bi bi-cart3"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+            3
+          </span>
+        </button>
+        <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a (click)="logout()" class="nav-link">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Seller Name</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
