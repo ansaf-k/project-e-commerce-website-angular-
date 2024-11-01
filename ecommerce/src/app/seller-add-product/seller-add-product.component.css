@@ -2,49 +2,41 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.seller-auth, .sign-up {
-  height: 89vh;
-  background-color: rgba(9, 31, 58, 0.95);
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
+.add-product-container {
+  background-color: rgba(10, 35, 66, 0.95);
+  min-height: calc(100vh - 90px);
 }
 .card {
   background-color: rgba(10, 35, 66, 0.98);
   border: 1px solid rgba(184, 134, 11, 0.3);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .card-body {
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
-.logo {
+.card-title {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #B8860B;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
-.subtitle {
-  color: #F2E8CF;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-}
 .form-label {
   color: #F2E8CF;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 0.25rem;
 }
 .form-control {
   background-color: rgba(10, 35, 66, 0.7);
   border: 1px solid rgba(184, 134, 11, 0.3);
-  border-radius: 25px;
+  border-radius: 5px;
   color: #F2E8CF;
-  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
   transition: all 0.3s ease;
 }
 .form-control::placeholder {
@@ -55,6 +47,11 @@ body {
   background-color: rgba(10, 35, 66, 0.9);
   border-color: #B8860B;
 }
+.input-group-text {
+  background-color: rgba(184, 134, 11, 0.2);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  color: #B8860B;
+}
 .btn-primary {
   background-color: transparent;
   border: 1px solid #B8860B;
@@ -64,52 +61,23 @@ body {
   letter-spacing: 1px;
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;
-  border-radius: 25px;
 }
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
   background-color: #B8860B;
   color: #0A2342;
 }
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(184, 134, 11, 0.25);
 }
-.auth-switch {
-  color: #F2E8CF;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  cursor: pointer;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
-.auth-switch:hover {
-  color: #B8860B;
-  text-decoration: none;
-}
-.login-link {
-  color: #B8860B;
-  font-weight: 600;
-}
-.login-link:hover {
-  color: #886308;
-}
-.copyright {
-  color: rgba(242, 232, 207, 0.7);
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
-}
-.text-danger {
-  color: #5E0B15 !important;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .card-body {
-    padding: 2rem 1.5rem;
+    padding: 1rem;
   }
-  .logo {
-    font-size: 1.8rem;
-  }
-  .subtitle {
-    font-size: 0.85rem;
+  .card-title {
+    font-size: 1.25rem;
   }
 }

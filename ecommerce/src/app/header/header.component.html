@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg py-3">
+<nav class="navbar navbar-expand-lg py-3 fornav">
   <div class="container">
     <a class="navbar-brand" routerLink="/">
       <span class="brand-text">LuxMarket</span>
@@ -26,11 +26,13 @@
         </ul>
         <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link">Product List</a>
+            <a routerLink="seller-add-product" class="nav-link">Add Product</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link">Product Add</a>
+            <a routerLink="seller-home" class="nav-link">List</a>
           </li>
+          
         </ul>
         <div *ngIf="menuType==='default'" class="dropdown">
           <button class="btn ms-2 custom-btn dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,7 +54,7 @@
             <a (click)="logout()" class="nav-link">Logout</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Seller Name</a>
+            <a class="nav-link seller-name">{{ getShortName(this.sellerName) }}</a>
           </li>
         </ul>
       </div>

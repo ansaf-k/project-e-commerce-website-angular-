@@ -96,26 +96,21 @@
       "password": "fadhi11"
     },
     {
-      "id": "30bf",
-      "name": "fadhi",
+      "id": "05d5",
+      "name": "abc",
       "email": "fadhitest@gmail.com",
-      "password": "fadhi11"
-    },
+      "password": "asd"
+    }
+  ],
+  "products": [
     {
-      "id": "ad58",
-      "email": "abc@test.com",
-      "password": "123"
-    },
-    {
-      "id": "9f91",
-      "email": "abc@test.com",
-      "password": "123"
-    },
-    {
-      "id": "4482",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "9a93",
+      "name": "Ornate Gold Stud Earrings",
+      "price": 39899,
+      "color": "Gold",
+      "category": "Gold",
+      "image": "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3fcc8a6c/images/hi-res/51T556SBYABA00_1.jpg?sw=640&sh=640",
+      "description": "Enhance your elegance with these 22 Karat yellow gold Stud Earrings, featuring an ornate floral design with intricate detailing.\n\nPerfect for a traditional celebration or an elegant event, these Stud Earrings showcase an ornate floral design with intricate detailing. Pair them with a traditional outfit to elevate your style."
     }
   ]
 }

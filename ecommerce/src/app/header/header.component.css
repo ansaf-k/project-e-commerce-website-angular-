@@ -6,6 +6,9 @@ body {
   background-color: rgba(10, 35, 66, 0.95);
   transition: all 0.3s ease;
 }
+.fornav{
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
 .navbar.scrolled {
   background-color: rgba(10, 35, 66, 0.98);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -86,7 +89,7 @@ body {
 }
 .seller-name {
   color: #B8860B;
-  font-weight: 600;
+  font-weight: 700;
 }
 @media (max-width: 991px) {
   .navbar-collapse {

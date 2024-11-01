@@ -1,0 +1,101 @@
+.list-main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(10, 35, 66, 0.95);
+    min-height: 100vh;
+}
+
+.product-listing-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.brand-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #B8860B;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+    background-color: rgba(10, 35, 66, 0.98);
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.2);
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 1.25rem;
+}
+
+.product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #F2E8CF;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #B8860B;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.product-color {
+    font-size: 0.9rem;
+    color: #F2E8CF;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #B8860B;
+    color: #B8860B;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B8860B;
+    color: #0A2342;
+}
+
+.col {
+    padding: 5px 20px;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(184, 134, 11, 0.25);
+}
+
+@media (max-width: 767px) {
+    .brand-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-text {
+        font-size: 1.8rem;
+    }
+    .col{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
