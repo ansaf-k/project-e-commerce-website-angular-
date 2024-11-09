@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SellerService } from '../services/seller.service';
+import { SellerService } from '../../services/seller.service';
 import { Router,RouterModule } from '@angular/router';
-import { SignUp } from '../data-type';
+import { SignUp } from '../../data-type';
 
 @Component({
   selector: 'app-seller-auth',

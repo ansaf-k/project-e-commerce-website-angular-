@@ -1,0 +1,54 @@
+<div class="update-product-container py-4 mx-auto">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card ">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Update Product</h2>
+                        <form #ProductForm="ngForm" (ngSubmit)="UpdateProduct(ProductForm.value)">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="productName"
+                                        ngModel="{{productData?.name}}" name="name" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Price</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>`
+                                        <input type="number" class="form-control" id="productPrice" name="price"
+                                            ngModel="{{productData?.price}}" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Color</label>
+                                    <input type="text" class="form-control" id="productColor" name="color"
+                                        ngModel="{{productData?.color}}" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="productCategory" name="category"
+                                        ngModel="{{productData?.category}}" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Image URL</label>
+                                    <input type="text" class="form-control" id="productImage" name="image"
+                                        ngModel="{{productData?.image}}">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Description</label>
+                                    <textarea class="form-control" id="productDescription" name="description"
+                                        ngModel="{{productData?.description}}" rows="2" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100"
+                                        [disabled]="!ProductForm.valid">Update Product</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

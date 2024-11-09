@@ -1,7 +1,7 @@
 .list-main {
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(10, 35, 66, 0.95);
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .product-listing-container {
@@ -27,17 +27,19 @@
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
     height: 200px;
     object-fit: cover;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .product-details {
     padding: 1.25rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-name {
@@ -88,13 +90,17 @@
     .brand-text {
         font-size: 2rem;
     }
+    .btn-primary {
+        padding: 0.25rem 0.50rem !important;
+    }
 }
 
 @media (max-width: 480px) {
     .brand-text {
         font-size: 1.8rem;
     }
-    .col{
+
+    .col {
         padding-left: 30px;
         padding-right: 30px;
     }
