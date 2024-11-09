@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .seller-auth, .sign-up {
-  height: 89vh;
+  height: 91vh;
   background-color: rgba(9, 31, 58, 0.95);
   padding: 4rem 0;
   display: flex;

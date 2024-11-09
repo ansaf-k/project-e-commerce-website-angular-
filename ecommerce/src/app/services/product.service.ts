@@ -29,4 +29,12 @@ export class ProductService {
     console.warn(data)
     return this.http.put<product>(`http://localhost:3000/products/${data.id}`,data);
   }
+
+  Popularproduct(){
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
+  }
+
+  trendyProduct(){
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=5');
+  }
 }
